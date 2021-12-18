@@ -14,6 +14,13 @@
 #  index_albums_on_artist_id  (artist_id)
 #
 class Album < ApplicationRecord
+  self.table_name  = 'albums'
+  self.primary_key = 'id'
+
   has_many :songs
-  belongs_to :artist
+  belongs_to :artist, optional: false
+
+  def artist_name
+    "#{artist.name}"
+  end
 end

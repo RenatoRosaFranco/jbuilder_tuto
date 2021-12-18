@@ -15,5 +15,16 @@
 #  index_songs_on_album_id  (album_id)
 #
 class Song < ApplicationRecord
+  self.table_name  = 'songs'
+  self.primary_key = 'id'
+
   belongs_to :album
+
+  def album_name
+    "#{album.name}"
+  end
+
+  def artist_name
+    "#{album.artist.name}"
+  end
 end

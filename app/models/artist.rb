@@ -9,6 +9,9 @@
 #  updated_at :datetime         not null
 #
 class Artist < ApplicationRecord
+  self.table_name  = 'artists'
+  self.primary_key = 'id'
+
   has_many :albums
 
   def name_with_label
