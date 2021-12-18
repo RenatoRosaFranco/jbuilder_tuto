@@ -47,7 +47,7 @@ red = Artist.create(
  label: 'EMI'
 )
 
-californication = red.albus.create(
+californication = red.albums.create(
  name: 'Californication', 
  release_date: '08/06/1999'
 )
