@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a Hands-on code project to learn how to use properly the Jbuilder
+on Ruby on Rails ecossystem and thinking about how deal with API without use
+any kind of approach for now (like Serializers, FastJsonAPI and etc... )
 
-Things you may want to cover:
+### * Ruby version
+``` 2.7.3 ```
 
-* Ruby version
+### * System dependencies
+The project dont have any dependencies
 
-* System dependencies
+### * Configuration
+```git clone ```
 
-* Configuration
+### * Database creation
+``` rails db:create ```
 
-* Database creation
+### * Database initialization
+```rails db:migrate db:seed ```
 
-* Database initialization
+### * How to run the test suite
+```rails g rspec spec/ ```
 
-* How to run the test suite
+### * Running the application
+```rails server --port [PORT] ```
 
-* Services (job queues, cache servers, search engines, etc.)
+### * Services (job queues, cache servers, search engines, etc.)
+No aditional services
 
-* Deployment instructions
-
-* ...
+### * Deployment instructions
+No deployment needed
